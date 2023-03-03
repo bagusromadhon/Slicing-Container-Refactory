@@ -67,11 +67,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           padding: EdgeInsets.all(20),
           child: Container(
             padding: EdgeInsets.all(0),
-            height: 300,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
-                  color: Colors.grey,
+                  color: Colors.grey[300]!,
                   width: 1,
                 )),
             child: Column(
@@ -81,7 +80,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                       border: Border(
                           bottom: BorderSide(
                     width: 1,
-                    color: Colors.grey,
+                    color: Colors.grey[300]!,
                   ))),
                   child: Row(
                     children: [
@@ -123,7 +122,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                           child: Row(
                             children: [
                               const Icon(
-                                Icons.plus_one,
+                                Icons.plus_one_outlined,
+                                color:Colors.amber,
                                 size: 15.0,
                               ),
                               SizedBox(
@@ -142,6 +142,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   ),
                 ),
                 Container(
+                  decoration: BoxDecoration(
+                    border: Border(bottom:BorderSide(color: Colors.grey[300]!))
+                  ),
                   child: Column(
                     children: [
                       Row(
@@ -240,14 +243,342 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                                  width: 150,
                             ),
                             Expanded(child:Text("100%",style: TextStyle(fontSize: 10,color: Colors.grey),))
-                          ],
+                    ],
                         ),
                       ),
                       
                     ],
                   ),
-                )
-              ],
+                ),
+                 Container(
+                  decoration: BoxDecoration(
+                    border: Border(bottom:BorderSide(color: Colors.grey[300]!))
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                        
+                          Expanded(
+                            flex: 2,
+                            child: Container(
+                              padding: EdgeInsets.only(top: 10, left: 10),
+                              child: Text(
+                                "Senin, 3 Oktober 2022",
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Colors.grey[600],
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: Container(
+                              padding: EdgeInsets.only(top: 10),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "Assignee: ",
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {},
+                                    child: Text(
+                                      'Slamet',
+                                      style: TextStyle(
+                                        color: Colors.blue,
+                                        fontSize: 10,
+                                        decoration: TextDecoration.underline,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 2),
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                " T1234 [XPN - EMI][BE] - Riset dan Wsireframe Homepage Project",
+                                style: TextStyle(
+                                    fontSize: 10, fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        child: Row(
+                          children: [
+
+                            Container(
+                              padding: EdgeInsets.all(2),
+                              height: 20,
+                              
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 253, 230, 232),
+                                borderRadius: BorderRadius.circular(4),
+                                
+                              ),
+                              child: Text("Unbreak Now!",style: TextStyle(fontSize: 10,color: Colors.red[700]),),
+                            ),
+                            SizedBox(
+                             width: 10,
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(2),
+                              height: 20,
+                              
+                              decoration: BoxDecoration(
+                                color: Colors.green[800],
+                                borderRadius: BorderRadius.circular(4),
+                                
+                              ),
+                              child: Text("SP: 1.0 ",style: TextStyle(fontSize: 10,color: Colors.white),),
+                            ),
+                            SizedBox(
+                                 width: 150,
+                            ),
+                            Expanded(child:Text("100%",style: TextStyle(fontSize: 10,color: Colors.grey),))
+                    ],
+                        ),
+                      ),
+                      
+                    ],
+                  ),
+                ),
+                 Container(
+                  decoration: BoxDecoration(
+                    border: Border(bottom:BorderSide(color: Colors.grey[300]!))
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                        
+                          Expanded(
+                            flex: 2,
+                            child: Container(
+                              padding: EdgeInsets.only(top: 10, left: 10),
+                              child: Text(
+                                "Senin, 3 Oktober 2022",
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Colors.grey[600],
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: Container(
+                              padding: EdgeInsets.only(top: 10),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "Assignee: ",
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {},
+                                    child: Text(
+                                      'Slamet',
+                                      style: TextStyle(
+                                        color: Colors.blue,
+                                        fontSize: 10,
+                                        decoration: TextDecoration.underline,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 2),
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                " T1234 [XPN - EMI][BE] - Riset dan Wsireframe Homepage Project",
+                                style: TextStyle(
+                                    fontSize: 10, fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        child: Row(
+                          children: [
+
+                            Container(
+                              padding: EdgeInsets.all(2),
+                              height: 20,
+                              
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 253, 230, 232),
+                                borderRadius: BorderRadius.circular(4),
+                                
+                              ),
+                              child: Text("Unbreak Now!",style: TextStyle(fontSize: 10,color: Colors.red[700]),),
+                            ),
+                            SizedBox(
+                             width: 10,
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(2),
+                              height: 20,
+                              
+                              decoration: BoxDecoration(
+                                color: Colors.green[800],
+                                borderRadius: BorderRadius.circular(4),
+                                
+                              ),
+                              child: Text("SP: 1.0 ",style: TextStyle(fontSize: 10,color: Colors.white),),
+                            ),
+                            SizedBox(
+                                 width: 150,
+                            ),
+                            Expanded(child:Text("100%",style: TextStyle(fontSize: 10,color: Colors.grey),))
+                    ],
+                        ),
+                      ),
+                      
+                    ],
+                  ),
+                ),
+                 Container(
+                  decoration: BoxDecoration(
+                    border: Border(bottom:BorderSide(color: Colors.grey[300]!))
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                        
+                          Expanded(
+                            flex: 2,
+                            child: Container(
+                              padding: EdgeInsets.only(top: 10, left: 10),
+                              child: Text(
+                                "Senin, 3 Oktober 2022",
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  color: Colors.grey[600],
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: Container(
+                              padding: EdgeInsets.only(top: 10),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "Assignee: ",
+                                    style: TextStyle(fontSize: 10),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {},
+                                    child: Text(
+                                      'Slamet',
+                                      style: TextStyle(
+                                        color: Colors.blue,
+                                        fontSize: 10,
+                                        decoration: TextDecoration.underline,
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 2),
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                " T1234 [XPN - EMI][BE] - Riset dan Wsireframe Homepage Project",
+                                style: TextStyle(
+                                    fontSize: 10, fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Container(
+                        padding: EdgeInsets.only(left: 10),
+                        child: Row(
+                          children: [
+
+                            Container(
+                              padding: EdgeInsets.all(2),
+                              height: 20,
+                              
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 253, 230, 232),
+                                borderRadius: BorderRadius.circular(4),
+                                
+                              ),
+                              child: Text("Unbreak Now!",style: TextStyle(fontSize: 10,color: Colors.red[700]),),
+                            ),
+                            SizedBox(
+                             width: 10,
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(2),
+                              height: 20,
+                              
+                              decoration: BoxDecoration(
+                                color: Colors.green[800],
+                                borderRadius: BorderRadius.circular(4),
+                                
+                              ),
+                              child: Text("SP: 1.0 ",style: TextStyle(fontSize: 10,color: Colors.white),),
+                            ),
+                            SizedBox(
+                                 width: 150,
+                            ),
+                            Expanded(child:Text("100%",style: TextStyle(fontSize: 10,color: Colors.grey),))
+                    ],
+                        ),
+                      ),
+                      
+                    ],
+                  ),
+                ),
+                //end e
+              ], //end container
             ),
           )),
       bottomNavigationBar: BottomNavigationBar(
